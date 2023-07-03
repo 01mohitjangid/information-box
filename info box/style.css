@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Amazon+Ember&display=swap');
+
+body {
+  background-image: url("background-image.jpg");
+  background-size: cover;
+  background-position: center;
+  font-family: "Amazon Ember", Arial, sans-serif;
+  color: #333;
+}
+
+.container {
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  animation: fade 1s ease-in-out;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+h2 {
+  text-align: center;
+  color: #0066c0;
+}
+
+.info-box {
+  margin-top: 20px;
+}
+
+.info-box label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.info-box input[type="text"],
+.info-box input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.info-box button {
+  width: 100%;
+  padding: 10px;
+  background-color: #ff9900;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.info-box button:hover {
+  background-color: #ffac33;
+}
+
+.name {
+  font-size: 48px;
+  text-transform: uppercase;
+  animation: flowText 6s infinite;
+}
+
+@keyframes flowText {
+  0% {
+    color: #FF0000; /* Red */
+  }
+  14% {
+    color: #FF7F00; /* Orange */
+  }
+  28% {
+    color: #FFFF00; /* Yellow */
+  }
+  42% {
+    color: #00FF00; /* Green */
+  }
+  57% {
+    color: #0000FF; /* Blue */
+  }
+  71% {
+    color: #4B0082; /* Indigo */
+  }
+  85% {
+    color: #8B00FF; /* Violet */
+  }
+  100% {
+    color: #FF0000; /* Red */
+  }
+}
